@@ -4,7 +4,7 @@
 This portfolio showcases my work and skills as a web developer using HTML, CSS, and JavaScript. 
 
 ## Demo
-![Home Page Screenshot](home.jpg)
+![Home Page Screenshot](portfolio-preview.png)
 
 ## Features
 - Visually appealing homepage with a featured photo

@@ -1,6 +1,7 @@
 # Projects Portfolio Showcase
 
 A clean, responsive website that showcases my web development projects with descriptions, features, and direct links to each project.
+![](g.png)
 
 ## Overview
 

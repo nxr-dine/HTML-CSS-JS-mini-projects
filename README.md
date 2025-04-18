@@ -8,7 +8,7 @@ This repository contains a collection of mini projects built with HTML, CSS, and
 
 <div style="display: flex; align-items: center;">
   <p style="flex: 1;">A sleek slider that displays cards in a responsive layout, enabling users to browse content easily with smooth transitions.</p>
-  <img src="Project 1 - Responsive Card Slider/card-slider-preview.png" alt="Responsive Card Slider Preview" width="300" style="flex: 1;">
+  <img src="Project 1 - Responsive Card Slider/Screenshot.png" alt="Responsive Card Slider Preview" width="800" style="flex: 1;">
 </div>
 
 ---

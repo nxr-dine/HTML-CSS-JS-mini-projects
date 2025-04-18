@@ -1,4 +1,5 @@
 # Lux | Web Template
+![](Screen.png)
 
 ## Overview
 

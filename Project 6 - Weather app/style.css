@@ -4,38 +4,223 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: "Nunito", sans-serif;
+  background: linear-gradient(135deg, #72afd3, #37538c);
+  min-height: 100vh;
+  color: #fff;
 }
 
-.input {
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-title {
   text-align: center;
-  margin: 100px 0;
+  margin: 30px 0;
 }
 
-input[type="text"] {
+.app-title h1 {
+  font-size: 2.5em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 10;
+}
+
+.inputValue {
   height: 50px;
-  width: 600px;
-  background-color: #e7e7e7;
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.8);
   font-family: "Nunito", sans-serif;
-  font-weight: bold;
-  font-size: 20px;
+  font-weight: 600;
+  font-size: 18px;
   border: none;
-  border-radius: 2px;
+  border-radius: 25px 0 0 25px;
+  padding: 0 20px;
+  color: #333;
+  outline: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+  height: 50px;
+  width: 120px;
+  background-color: #f3b33e;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  border: none;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+  background-color: #e09c1e;
+}
+
+/* Suggestions container */
+.suggestions {
+  position: absolute;
+  top: 55px;
+  width: 70%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  z-index: 5;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.suggestion-item {
+  padding: 12px 20px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+}
+
+.suggestion-item:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.weather-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  margin-top: 10px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.weather-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.weather-icon {
+  margin-bottom: 20px;
+}
+
+.weather-icon img {
+  width: 120px;
+  height: 120px;
+}
+
+.weather-info {
+  width: 100%;
+}
+
+.name {
+  font-size: 2.2em;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.date {
+  font-size: 1.2em;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 15px;
+}
+
+.temp {
+  font-size: 3em;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.desc {
+  font-size: 1.5em;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.humidity, .wind {
+  font-size: 1.2em;
+}
+
+.error-message {
+  color: #ff5959;
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
   padding: 10px;
+  display: none;
 }
 
-input[type="submit"] {
-  height: 50px;
-  width: 100px;
-  background-color: #e7e7e7;
-  font-family: "Nunito", sans-serif;
-  font-weight: bold;
-  font-size: 20px;
-  border: none;
-  border-radius: 2px;
-}
-
-.display {
+footer {
   text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .weather-container {
+    flex-direction: row;
+    text-align: left;
+  }
+  
+  .weather-icon {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .inputValue {
+    width: 60%;
+  }
+  
+  .app-title h1 {
+    font-size: 2em;
+  }
+  
+  .temp {
+    font-size: 2.5em;
+  }
+  
+  .desc {
+    font-size: 1.2em;
+  }
+  
+  .suggestions {
+    width: 60%;
+  }
 }

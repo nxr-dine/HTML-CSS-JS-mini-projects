@@ -2,22 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=*, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>OpenAPI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Weather App</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
-  <div class="input">
-    <input type="text" class="inputValue" placeholder="Enter a city">
-    <input type="submit" value="submit" class="button">
+  <div class="container">
+    <div class="app-title">
+      <h1>Weather Dashboard</h1>
+    </div>
+    
+    <div class="search-box">
+      <input type="text" class="inputValue" placeholder="Enter a city name">
+      <button class="button">Search</button>
+    </div>
+
+    <div class="weather-container">
+      <div class="weather-icon">
+        <img id="weather-img" src="" alt="Weather Icon">
+      </div>
+      
+      <div class="weather-info">
+        <h2 class="name"></h2>
+        <div class="date"></div>
+        <div class="temp"></div>
+        <div class="desc"></div>
+        <div class="details">
+          <div class="humidity"></div>
+          <div class="wind"></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="error-message"></div>
   </div>
 
-  <div class="display">
-    <h1 class="name"></h1>
-    <p class="desc"></p>
-    <p class="temp"></p>
-  </div>
+  <footer>
+    <p>Weather data powered by OpenWeatherMap</p>
+  </footer>
 
-<script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>

@@ -1,56 +1,63 @@
-# Mini HTML, CSS, and JavaScript Projects
+# Projects Portfolio Showcase
 
-This repository contains a collection of mini projects built with HTML, CSS, and JavaScript.
+A clean, responsive website that showcases my web development projects with descriptions, features, and direct links to each project.
 
-## Projects
+## Overview
 
-### Project 1 - Responsive Card Slider (CSS, HTML, and JS):
+This portfolio website displays my collection of web projects in an organized, visually appealing manner. Each project is presented with:
 
-<div style="display: flex; align-items: center;">
-  <p style="flex: 1;">A sleek slider that displays cards in a responsive layout, enabling users to browse content easily with smooth transitions.</p>
-  <img src="Project 1 - Responsive Card Slider/Screenshot.png" alt="Responsive Card Slider Preview" width="800" style="flex: 1;">
-</div>
+- Project image/screenshot
+- Brief description
+- Technologies used
+- Key features
+- Link to view the actual project
 
----
+## Projects Included
 
-### Project 2 - Lux (CSS and HTML):
+1. **Responsive Card Slider** - A modern card slider with touch support and responsive design
+2. **Lux Web Template** - A responsive web template for services and portfolios
+3. **Portfolio** - A personal web developer portfolio 
+4. **Product Landing Page** - A headphones product showcase
+5. **Joulx Shoes Landing Page** - A shoe brand landing page
+6. **Weather App** - A weather forecast application
 
-<div style="display: flex; align-items: center;">
-  <p style="flex: 1;">Lux is a responsive web template for services and portfolios, featuring a clean design for agencies and freelancers.</p>
-  <img src="Project 2 - Lux/lux-preview.png" alt="Lux Preview" width="300" style="flex: 1;">
-</div>
+## Structure
 
----
+```
+portfolio-showcase/
+├── index.html           # Main portfolio page
+├── styles.css           # CSS styles for the portfolio
+├── script.js           # Optional JavaScript for interactivity
+├── images/             # Contains project screenshots
+│   ├── project1.jpg
+│   ├── project2.jpg
+│   └── ...
+├── Project 1 - Responsive Card Slider/
+├── Project 2 - Lux/
+├── Project 3 - Portfolio/
+├── Project 4 - Product-Landing-Page/
+├── Project 5 - Adidas/
+├── Project 6 - Weather app/
+└── README.md
+```
 
-### Project 3 - Portfolio (CSS, HTML, and JS):  
-<div style = "display: flex; justify-content: space-between">
-  <p>This portfolio showcases my work and skills as a web developer using HTML, CSS, and JavaScript.</p> <img src="Project 3 - Portfolio/portfolio-preview.png" alt="Portfolio Preview" width="700">
-</div>
+## Setup Instructions
 
----
+1. Clone the repository
+2. Ensure all project folders are in the root directory
+3. Add project screenshots to the `images` folder
+4. Open `index.html` in your browser to view the portfolio
 
-### Project 4 - Product Landing Page (CSS and HTML):
+## Technologies Used
 
-<div style="display: flex; align-items: center;">
-  <p style="flex: 1;">A sleek, responsive page showcasing a product, features, testimonials, and a call-to-action button.</p>
-  <img src="Project 4 - Product-Landing-Page/product-landing-preview.png" alt="Product Landing Page Preview" width="700" style="flex: 1;">
-</div>
+- HTML5
+- CSS3
+- JavaScript (optional animations)
 
----
+## Customization
 
-### Project 5 - Joulx Shoes Landing Page (HTML and CSS):
+You can easily customize this portfolio by editing:
 
-<div style="display: flex; align-items: center;">
-  <p style="flex: 1;">A stylish Joulx landing page with a gradient background and sections for men's, women's, and kids' shoes. </p>
-  <img src="Project 5 - Adidas/screenshot.png" alt="Joulx Shoes Landing Page Preview" width="700" style="flex: 1;">
-</div>
-
----
-
-## Getting Started
-
-To get a copy of this project up and running on your local machine, follow these simple steps:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/NoureddineBou/HTML-CSS-JS-mini-projects.git
+- Color scheme in CSS variables (in `styles.css`)
+- Project descriptions and details in `index.html`
+- Adding or removing project cards as needed

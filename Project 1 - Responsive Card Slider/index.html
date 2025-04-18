@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Card Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Responsive Card Slider</h1>
+        
+        <div class="slider-container">
+            <div class="slider-controls">
+                <button id="prev-btn" class="control-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+                <button id="next-btn" class="control-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <div class="card">
+                        <div class="card-image" style="background-color: #3498db;"></div>
+                        <div class="card-content">
+                            <h3>Mountain Adventure</h3>
+                            <p>Explore the breathtaking landscapes of the Rocky Mountains.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-image" style="background-color: #e74c3c;"></div>
+                        <div class="card-content">
+                            <h3>Beach Retreat</h3>
+                            <p>Relax and unwind on the pristine shores of tropical paradise.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-image" style="background-color: #2ecc71;"></div>
+                        <div class="card-content">
+                            <h3>City Exploration</h3>
+                            <p>Discover hidden gems and iconic landmarks in vibrant urban centers.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-image" style="background-color: #f39c12;"></div>
+                        <div class="card-content">
+                            <h3>Forest Escape</h3>
+                            <p>Immerse yourself in the tranquility of lush green forests.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-image" style="background-color: #9b59b6;"></div>
+                        <div class="card-content">
+                            <h3>Desert Journey</h3>
+                            <p>Experience the mystical beauty of vast desert landscapes.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-image" style="background-color: #1abc9c;"></div>
+                        <div class="card-content">
+                            <h3>Island Hopping</h3>
+                            <p>Sail through crystal clear waters and visit stunning islands.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pagination">
+                <!-- Pagination dots will be added dynamically with JavaScript -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

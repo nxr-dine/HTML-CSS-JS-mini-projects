@@ -15,10 +15,12 @@
 }
 
 body {
-    background-color: #f9fafb;
+    background-color: #e0e7ff;  /* Light blue background to complement the header */
     color: var(--dark-color);
     line-height: 1.6;
 }
+
+
 
 header {
     background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
@@ -160,3 +162,4 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
